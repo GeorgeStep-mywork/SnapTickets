@@ -2,13 +2,50 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDM0E9VFR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YDM0E9VFR8');
+</script>
+
+<!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+    (function() {
+    window.__insp = window.__insp || [];
+    __insp.push(['wid', 25669779]);
+    var ldinsp = function(){
+    if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=25669779&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+    setTimeout(ldinsp, 0);
+    })();
+    </script>
+    <!-- End Inspectlet Asynchronous Code -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masco - Saas Software Startup Tailwind Template</title>
+    <title>SnapTickets - Check Tickets in the Time of a Snap!</title>
     <meta name="description" content="AIMass Tailwind based SASS Template" />
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.snapticket.net">
+    <meta property="og:title" content="SnapTickets: Streamlining Event Management">
+    <meta property="og:description" content="Elevate your events with SnapTickets – QR-based ticketing, advanced analytics, and expert event website development. Simplify, optimize, captivate!">
+    <meta property="og:image" content="https://snaptickets.net/assets/img/th-1/checker1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.snapticket.net">
+    <meta property="twitter:title" content="SnapTicket: Streamlining Event Management">
+    <meta property="twitter:description" content="Elevate your events with SnapTicket – QR-based ticketing, advanced analytics, and expert event website development. Simplify, optimize, captivate!">
+    <meta property="twitter:image" content="https://snaptickets.net/assets/img/th-1/checker1.png">
+
 
     <!-- Icon Font -->
     <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
@@ -63,13 +100,17 @@
                                     <a href="#section-services" class="nav-link-item">Services</a>
                                 </li>
                                 <li class="nav-item nav-item-has-children">
+                                    <a href="#hworks" class="nav-link-item drop-trigger">How this works</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
                                     <a href="#section-about" class="nav-link-item drop-trigger">About</a>
                                 </li>
+                                
                                 <li class="nav-item nav-item-has-children">
-                                    <a href="#section-projects" class="nav-link-item drop-trigger">Projects</a>
+                                    <a href="#section-projects" class="nav-link-item drop-trigger">Blog</a>
                                 </li>
                                 <li class="nav-item nav-item-has-children">
-                                    <a href="#section-testimonial" class="nav-link-item drop-trigger">Testimonial</a>
+                                    <a href="#section-faq" class="nav-link-item drop-trigger">FAQ</a>
                                 </li>
                             </ul>
                         </nav>
@@ -78,8 +119,8 @@
 
                     <!-- Header User Event -->
                     <div class="flex items-center gap-6">
-                        <a href="login.html" class="btn-text hidden hover:text-ColorBlue sm:inline-block">Login</a>
-                        <a href="signup.html" class="btn is-blue is-rounded btn-animation group hidden sm:inline-block"><span>Sign up free</span></a>
+                        <!-- <a href="login.html" class="btn-text hidden hover:text-ColorBlue sm:inline-block">Login</a> -->
+                        <a href="contact.html" class="btn is-blue is-rounded btn-animation group hidden sm:inline-block"><span>Contact Sales</span></a>
                         <!-- Responsive Offcanvas Menu Button -->
                         <div class="block lg:hidden">
                             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
@@ -114,12 +155,28 @@
                                         <p>
                                             Our QR-based ticketing tool ensures seamless entry – just snap, scan, and enjoy. Say goodbye to waiting in lines and hello to a stress-free way of making memories at your favorite events!
                                         </p>
-                                        <form action="#" method="post" class="relative mx-auto flex w-full items-center sm:w-[80%] lg:mx-0 lg:mt-5 lg:max-w-md">
-                                            <input type="tel" placeholder="Enter your phone number" class="w-full rounded-[50px] border border-ColorBlack bg-white px-5 py-[15px] pr-40 text-base font-semibold text-opacity-50 outline-none" />
-                                            <button type="submit" class="btn is-blue is-rounded absolute right-[5px] py-[10px]">
-                                                Get a Call-back
-                                            </button>
-                                        </form>
+                                        <div class="lapShow">
+                                            <form action="https://api.web3forms.com/submit" method="POST" class="relative mx-auto flex w-full items-center sm:w-[80%] lg:mx-0 lg:mt-5 lg:max-w-md">
+                                                <input type="hidden" name="access_key" value="7e44001a-9df3-46ca-9ee3-6b18c2a4ffc7">
+                                                <input type="tel" name="Phone Number :" placeholder="Enter your phone number" class="w-full rounded-[50px] border border-ColorBlack bg-white px-5 py-[15px] pr-40 text-base font-semibold text-opacity-50 outline-none" />
+                                                <button type="submit" class="btn is-blue is-rounded absolute right-[5px] py-[10px]">
+                                                    Get a Call-back
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="mobileShow">
+                                            <form action="https://api.web3forms.com/submit" method="POST" class="relative mx-auto flex w-full items-center sm:w-[80%] lg:mx-0 lg:mt-5 lg:max-w-md">
+                                                <input type="hidden" name="access_key" value="7e44001a-9df3-46ca-9ee3-6b18c2a4ffc7">
+                                                <input type="tel" name="Phone Number :" placeholder="Phone number" class="w-full rounded-[50px] border border-ColorBlack bg-white px-5 py-[15px] pr-40 text-base font-semibold text-opacity-50 outline-none" />
+                                                <button type="submit" class="btn is-blue is-rounded absolute right-[5px] py-[10px]">
+                                                    Get a Call-back
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <script src="https://web3forms.com/client/script.js" async defer></script>
+
+
+
                                         <div class="mt-5 text-sm leading-6 md:justify-normal">
                                             <span class="mr-2 inline-block text-lg text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
                                             <span class="opacity-50">Our team will alter the software for your custom needs</span>
@@ -241,6 +298,31 @@
                             <!-- Service List -->
                             <div class="grid gap-6 sm:grid-cols-2">
                                 <!-- Service Item -->
+                                <div class="jos" data-jos_delay="0.9">
+                                    <div class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
+                                        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+                                            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                                                <img src="assets/img/icons/icon-black-service-4.svg" alt="icon-service-4" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                                                <img src="assets/img/icons/icon-blue-service-4.svg" alt="icon-service-4" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+                                            </div>
+                                            <div class="flex-1 text-center lg:text-left">
+                                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                                                    Efficient QR-Based Ticketing
+                                                </div>
+                                                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                                                    Say goodbye to long queues with SnapTicket's QR-based system. Experience faster check-ins with a simple snap, ensuring a smooth and enjoyable event for your attendees.
+                                                </p>
+                                                <a href="qr-ticketing.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                                                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Service Item -->
+                                <!-- Service Item -->
                                 <div class="jos" data-jos_delay="0">
                                     <div class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
                                         <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
@@ -255,7 +337,7 @@
                                                 <p class="mb-5 line-clamp-2 text-ColorBlack/80">
                                                     Enjoy the simplicity of SnapTicket's powerful user interface. Effortlessly track ticket purchases, and streamline the ticketing process for both organizers and attendees.
                                                 </p>
-                                                <a href="service-details.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                                                <a href="tracking-interface.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
                                                     <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -280,7 +362,7 @@
                                                 <p class="mb-5 line-clamp-2 text-ColorBlack/80">
                                                     Let us enhance your event's online presence with our expert team. We offer customized landing pages and seamless website integration for an engaging and informative event experience.
                                                 </p>
-                                                <a href="service-details.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                                                <a href="web-development.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
                                                     <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -305,32 +387,7 @@
                                                 <p class="mb-5 line-clamp-2 text-ColorBlack/80">
                                                     Gain valuable insights with our robust analytics dashboard. Make data-driven decisions, track attendee behavior, and enhance your marketing strategies for future events.
                                                 </p>
-                                                <a href="service-details.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
-                                                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
-                                                        <i class="fa-solid fa-arrow-right"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Service Item -->
-                                <!-- Service Item -->
-                                <div class="jos" data-jos_delay="0.9">
-                                    <div class="group rounded-[10px] border border-[#E6E6E6] bg-white p-8 transition-all duration-300 ease-in-out hover:border-ColorOffWhite hover:bg-ColorOffWhite lg:p-10 h-full">
-                                        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
-                                            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
-                                                <img src="assets/img/icons/icon-black-service-4.svg" alt="icon-service-4" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
-                                                <img src="assets/img/icons/icon-blue-service-4.svg" alt="icon-service-4" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
-                                            </div>
-                                            <div class="flex-1 text-center lg:text-left">
-                                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
-                                                    Efficient QR-Based Ticketing
-                                                </div>
-                                                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
-                                                    Say goodbye to long queues with SnapTicket's QR-based system. Experience faster check-ins with a simple snap, ensuring a smooth and enjoyable event for your attendees.
-                                                </p>
-                                                <a href="service-details.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                                                <a href="analytics-dashboard.html" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
                                                     <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </span>
@@ -357,7 +414,7 @@
             <!--...::: Service Section End :::... -->
 
             <!--...::: Content Section Start :::... -->
-            <section class="section-content">
+            <section class="section-content" id="hworks">
                 <!-- Section Background -->
                 <div class="bg-[#F5F3EA]">
                     <!-- Section Spacer -->
@@ -544,10 +601,10 @@
                             <div class="jos mb-[60px] flex flex-wrap items-end justify-between gap-8 xl:mb-20">
                                 <!-- Section Block -->
                                 <div class="max-w-[550px]">
-                                    <h2>We create world-class web design, & branding</h2>
+                                    <h2>SnapTicket – Smarter, Simpler, Simply Superb!</h2>
                                 </div>
                                 <!-- Section Block -->
-                                <a href="portfolio.html" class="btn is-blue is-rounded btn-animation is-large group"><span>See more works</span></a>
+                                <a href="contact.html" class="btn is-blue is-rounded btn-animation is-large group"><span>Contact SnapTickets</span></a>
                             </div>
                             <!-- Section Wrapper -->
 
@@ -557,14 +614,14 @@
                                 <div class="jos" data-jos_delay="0">
                                     <div class="group">
                                         <div class="overflow-hidden rounded-[10px]">
-                                            <img src="assets/img/th-1/portfolio-img-1.jpg" alt="portfolio-img-1" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                                            <img src="assets/img/th-1/blogimage1.png" alt="portfolio-img-1" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
                                         </div>
                                         <div class="mt-6">
                                             <div class="mb-5 flex flex-wrap justify-between gap-5 text-ColorBlack lg:flex-nowrap xl:mb-7">
-                                                <a href="portfolio-details.html" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] group-hover:text-ColorBlue xl:text-2xl">App — The power of communication</a>
-                                                <a href="#" class="hover:text-ColorBlue">UI/UX Design</a>
+                                                <a href="blog1.html" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] group-hover:text-ColorBlue xl:text-2xl">Revolutionizing Events with SnapTicket: A Seamless Experience from Start to Finish</a>
+                                                <!-- <a href="#" class="hover:text-ColorBlue">UI/UX Design</a> -->
                                             </div>
-                                            <a href="portfolio-details.html" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                            <a href="blog1.html" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View Article
                                                 <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
                                         </div>
                                     </div>
@@ -574,14 +631,14 @@
                                 <div class="jos" data-jos_delay="0.3">
                                     <div class="group">
                                         <div class="overflow-hidden rounded-[10px]">
-                                            <img src="assets/img/th-1/portfolio-img-2.jpg" alt="portfolio-img-2" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                                            <img src="assets/img/th-1/blogimage2.png" alt="portfolio-img-2" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
                                         </div>
                                         <div class="mt-6">
                                             <div class="mb-5 flex flex-wrap justify-between gap-5 text-ColorBlack lg:flex-nowrap xl:mb-7">
-                                                <a href="portfolio-details.html" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] group-hover:text-ColorBlue xl:text-2xl">Website — The future lifestyle platform.</a>
-                                                <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                                <a href="blog2.html" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] group-hover:text-ColorBlue xl:text-2xl">Unlocking Event Success: SnapTicket's 3-Step Process for Seamless Event Management</a>
+                                                <!-- <a href="#" class="hover:text-ColorBlue">Branding</a> -->
                                             </div>
-                                            <a href="portfolio-details.html" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                            <a href="blog2.html" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View Article
                                                 <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
                                         </div>
                                     </div>
@@ -603,7 +660,7 @@
             <!--...::: Portfolio Section End :::... -->
 
             <!--...::: FAQ Section Start :::... -->
-            <section class="section-faq">
+            <section class="section-faq" id="section-faq">
                 <div class="relative z-10 overflow-hidden">
                     <!-- Section Space -->
                     <div class="section-space">
@@ -796,11 +853,11 @@
                                 <!-- Section Block -->
                                 <div class="max-w-[400px] md:max-w-[500px] lg:max-w-[550px]">
                                     <h2 class="text-white">
-                                        Ready to grow your business digitally?
+                                        Ready to elevate your event experience? 
                                     </h2>
                                 </div>
                                 <!-- Section Block -->
-                                <a href="portfolio.html" class="btn is-blue is-rounded btn-animation is-large group"><span>Let's start the project</span></a>
+                                <a href="contact.html" class="btn is-blue is-rounded btn-animation is-large group"><span>Contact Sales</span></a>
                             </div>
                             <!-- Section Wrapper -->
                         </div>
@@ -831,20 +888,19 @@
                                 <div class="flex flex-col gap-y-7 md:col-span-3 lg:col-span-1">
                                     <!-- Footer Logo -->
                                     <a href="index.html">
-                                        <img src="assets/img/logo-blue-light.png" alt="Masco" width="109" height="24" />
+                                        <!-- <img src="assets/img/logo-blue-light.png" alt="Masco" width="109" height="24" /> -->
+                                        <b>SnapTickets</b>
                                     </a>
                                     <!-- Footer Content -->
                                     <div>
                                         <!-- Footer About Text -->
                                         <div class="lg:max-w-[416px]">
-                                            We are strategic & creative digital agency who are
-                                            focused on user experience, mobile, social, data
-                                            gathering and promotional offerings.
+                                            Experience seamless event management with SnapTicket's user-friendly interfaces, advanced analytics, and efficient QR-based systems. Redefine success – partner with SnapTickets!
                                         </div>
                                         <!-- Footer Mail -->
-                                        <a href="mailto:yourdemo@email.com" class="my-6 block underline-offset-4 transition-all duration-300 hover:underline">yourdemo@email.com</a>
+                                        <a href="mailto:contact@snaptickets.net" class="my-6 block underline-offset-4 transition-all duration-300 hover:underline">contact@snaptickets.net</a>
                                         <!-- Footer Social Link -->
-                                        <div class="flex flex-wrap gap-5">
+                                        <!-- <div class="flex flex-wrap gap-5">
                                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="twitter">
                                                 <i class="fa-brands fa-x-twitter"></i>
                                             </a>
@@ -857,7 +913,7 @@
                                             <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="github">
                                                 <i class="fa-brands fa-github"></i>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <!-- Footer Content -->
                                 </div>
@@ -867,54 +923,15 @@
                                 <div class="flex flex-col gap-y-7 md:col-span-1 lg:col-span-1">
                                     <!-- Footer Widget Title -->
                                     <div class="text-xl font-semibold capitalize">
-                                        Primary Pages
+                                        Contact Us
                                     </div>
-                                    <!-- Footer Navbar -->
-                                    <ul class="flex flex-col gap-y-[10px] capitalize">
-                                        <li>
-                                            <a href="index.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="about.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="services.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="pricing.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Contact</a>
-                                        </li>
-                                    </ul>
+                                    <div class="lg:max-w-[416px]">
+                                        Got questions or need assistance? Reach out to our dedicated team at <a href="mailto:contact@snaptickets.net" class=" underline-offset-4 transition-all duration-300 hover:underline">contact@snaptickets.net</a>
+                                       or call us at <a href="tel:+919544967011" class="underline-offset-4 transition-all duration-300 hover:underline">+91 9544967011.</a> We're here to ensure your event journey with SnapTickets is smooth and successful.
+                                    </div>
                                 </div>
                                 <!-- Footer Widget Item -->
 
-                                <!-- Footer Widget Item -->
-                                <div class="flex flex-col gap-y-6 md:col-span-1 lg:col-span-1">
-                                    <!-- Footer Title -->
-                                    <div class="text-xl font-semibold capitalize">
-                                        Utility pages
-                                    </div>
-                                    <!-- Footer Title -->
-
-                                    <!-- Footer Navbar -->
-                                    <ul class="flex flex-col gap-y-[10px] capitalize">
-                                        <li>
-                                            <a href="signup.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Signup</a>
-                                        </li>
-                                        <li>
-                                            <a href="login.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="error-404.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">404 Not found</a>
-                                        </li>
-                                        <li>
-                                            <a href="reset-password.html" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Password Reset</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Footer Widget Item-->
 
                                 <!-- Footer Widget Item -->
                                 <div class="flex flex-col gap-y-6 md:col-span-1 lg:col-span-1">
@@ -935,12 +952,6 @@
                                         <li>
                                             <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Terms & Conditions</a>
                                         </li>
-                                        <li>
-                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Strategic finance</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Video guide</a>
-                                        </li>
                                     </ul>
                                 </div>
                                 <!-- Footer Widget Item -->
@@ -960,7 +971,7 @@
                         <!-- Section Container -->
                         <div class="container-default">
                             <div class="text-center text-white text-opacity-80">
-                                &copy; Copyright 2024, All Rights Reserved by Mthemeus
+                                &copy; Copyright 2024, All Rights Reserved by SnapTickets
                             </div>
                         </div>
                         <!-- Section Container -->
